@@ -16,36 +16,36 @@
 .settingButton {
   padding: 10px 20px;
   border-radius: 5px;
-  background-color: #000;
-  color: #fff;
+  background-color: var(--regal-navy);
+  color: var(--cornsilk);
 }
 
 .cell {
-  background-color: #000;
-  color: #fff;
+  background-color: var(--sandy-brown);
+  color: var(--regal-navy);
+  border: 1px solid var(--regal-navy);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .open {
-  background-color: #fff;
-  color: #000;
+  background-color: transparent;
 }
 
 .enemy {
-  background-color: #f00;
+  background-color: var(--tomato);
 }
 
 .flagged {
-  background-color: #00f;
+  background-color: var(--royal-gold);
 }
 
 .game {
   display: grid;
   grid-template-columns: repeat(var(--difficult), 20px);
   grid-template-rows: repeat(var(--difficult), 20px);
-  border: 1px solid #000;
+  border: 1px solid var(--regal-navy);
 }
 
 .overlay {
@@ -66,8 +66,8 @@
 
 .content {
   border-radius: 15px;
-  background-color: #737373;
-  color: #fff;
+  background-color: var(--regal-navy);
+  color: var(--cornsilk);
   padding: 20px;
   display: flex;
   flex-direction: column;

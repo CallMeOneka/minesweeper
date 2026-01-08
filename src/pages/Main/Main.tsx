@@ -218,6 +218,13 @@ export const Main = () => {
           >
             16
           </button>
+          <button
+            type='button'
+            className={styles.settingButton}
+            onClick={() => handleStartGame(difficult)}
+          >
+            Рестарт
+          </button>
         </div>
         <div
           className={styles.game}
@@ -248,10 +255,11 @@ export const Main = () => {
               {gameStatus === "won" && "You won!"}
             </div>
             <button
-              className={styles.restartButton}
+              type='button'
+              className={styles.settingButton}
               onClick={() => handleStartGame(difficult)}
             >
-              Restart
+              Рестарт
             </button>
           </div>
         </div>
