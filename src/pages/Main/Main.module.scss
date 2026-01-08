@@ -1,0 +1,77 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100dvh;
+  gap: 40px;
+}
+
+.settings {
+  display: flex;
+  gap: 20px;
+}
+
+.settingButton {
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #000;
+  color: #fff;
+}
+
+.cell {
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.open {
+  background-color: #fff;
+  color: #000;
+}
+
+.enemy {
+  background-color: #f00;
+}
+
+.flagged {
+  background-color: #00f;
+}
+
+.game {
+  display: grid;
+  grid-template-columns: repeat(var(--difficult), 20px);
+  grid-template-rows: repeat(var(--difficult), 20px);
+  border: 1px solid #000;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  border-radius: 15px;
+  background-color: #737373;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
